@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQvfyNQ4iHiFFPO4EWuawlCsIS1n35QyGFXPE-epHrhQ6XQe9uQ" />
+	<title>Add Recommendation</title>
+</head>
+<body style="text-align: center;">
+	<div style="display: flex; align-items: center; flex-direction: column; margin: 9%">
+		<h1>Add New Recommendation</h1>
+		<div style="background-color: bisque; width: 50%;">
+			<form action="./html-personal-portfolio-recommendations.html">
+				<fieldset>
+					<legend>Recommendation:</legend>
+					<div style="margin: 10px">
+						<label for="fullname">Full name:</label>
+						<input type="text" id="fullname" name="fullname" required>
+					</div>
+					<div style="margin: 10px">
+						<label for="email">Email:</label>
+						<input type="email" id="email" name="email" required>
+					</div>
+					<div style="margin: 10px">
+						<label for="age">Age:</label>
+						<input type="number" id="age" name="age" required>
+					</div>
+					<div style="margin: 10px">
+						<label for="profile-picture">Profile Picture (optional):</label>
+						<input type="url" id="profile-picture" name="profile-picture">
+					</div>
+					<div style="margin: 20px">
+						<input type="submit" value="Submit Recommendation">
+					</div>
+				</fieldset>
+			</form>
+		</div>
+		<div style="height: 20px"></div>
+		<div><img src="../asserts/recommendation.png" style="height: 400px" alt=""/></div>
+	</div>
+</body>
+</html>
