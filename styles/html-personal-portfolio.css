@@ -1,0 +1,68 @@
+.cv-table {
+    border: bisque 1px solid;
+    width: 500px;
+}
+
+.cv-left {
+    background-color: bisque;
+}
+
+.cv-left-spacer {
+    height: 300px;
+}
+
+.cv-right-spacer {
+    height: 50px;
+}
+
+.add-recommendation-body {
+    text-align: center;
+}
+
+.add-recommendation-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 9%;
+}
+
+.add-recommendation-form-container {
+    background-color: bisque;
+    width: 50%;
+}
+
+.add-recommendation-spacer {
+    height: 20px;
+}
+
+.add-recommendation-img {
+    height: 400px;
+}
+
+.view-recommendation-body {
+    text-align: center;
+
+}
+
+.view-recommendation-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10%;
+}
+
+.view-recommendation-table {
+    background-color: aliceblue;
+}
+
+.view-recommendation-profile-picture {
+    height: 50px;
+}
+
+.view-recommendation-profile-picture {
+    height: 50px;
+}
+
+.view-recommendation-link-back {
+    margin: 10px;
+}

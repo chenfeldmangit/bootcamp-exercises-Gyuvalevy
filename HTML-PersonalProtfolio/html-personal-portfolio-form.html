@@ -3,12 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<link type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQvfyNQ4iHiFFPO4EWuawlCsIS1n35QyGFXPE-epHrhQ6XQe9uQ" />
+	<link rel="stylesheet" href="../styles/html-personal-portfolio.css">
 	<title>Add Recommendation</title>
 </head>
-<body style="text-align: center;">
-	<div style="display: flex; align-items: center; flex-direction: column; margin: 9%">
+<body class="add-recommendation-body">
+	<div class="add-recommendation-container">
 		<h1>Add New Recommendation</h1>
-		<div style="background-color: bisque; width: 50%;">
+		<div class="add-recommendation-form-container">
 			<form action="./html-personal-portfolio-recommendations.html">
 				<fieldset>
 					<legend>Recommendation:</legend>
@@ -34,8 +35,11 @@
 				</fieldset>
 			</form>
 		</div>
-		<div style="height: 20px"></div>
-		<div><img src="../asserts/recommendation.png" style="height: 400px" alt=""/></div>
+		<div class="add-recommendation-spacer"></div>
+		<div><img src="../asserts/recommendation.png" class="add-recommendation-img" alt=""/></div>
+		<div class="view-recommendation-link-back">
+			<a href="./html-personal-portfolio.html">Back to personal portfolio</a>
+		</div>
 	</div>
 </body>
 </html>
