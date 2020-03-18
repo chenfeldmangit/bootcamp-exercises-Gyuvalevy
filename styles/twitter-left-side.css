@@ -1,0 +1,78 @@
+.left-wrapper {
+    flex-grow: 1;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 5px 0 5px 0;
+}
+
+.left-wrapper > div {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.left-wrapper > div:hover {
+    color: rgb(30, 162, 243);
+    background-color: rgb(232, 246, 253);
+    font-weight: bold;
+    border-radius: 27px;
+}
+
+.left-wrapper div:first-child:hover {
+    background-color: white;
+}
+
+.left-wrapper i {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+}
+
+.left-wrapper div span {
+    padding-left: 20px;
+}
+
+.left-menu-icon i {
+    background-image: url('../asserts/twitter/twitter.svg');
+}
+
+.left-menu-home i {
+    background-image: url('../asserts/twitter/home.svg');
+    fill: red;
+}
+
+.left-menu-explore i {
+    background-image: url('../asserts/twitter/research.svg');
+}
+
+.left-menu-notification i {
+    background-image: url('../asserts/twitter/bell.svg');
+}
+
+.left-menu-messages i {
+    background-image: url('../asserts/twitter/email.svg');
+}
+
+.left-menu-bookmarks i {
+    background-image: url('../asserts/twitter/bookmark.svg');
+}
+
+.left-menu-lists i {
+    background-image: url('../asserts/twitter/list.svg');
+}
+
+.profile-picture {
+    object-fit: cover;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.left-menu-more i {
+    background-image: url('../asserts/twitter/dots.svg');
+}
+
+.left-tweet-button {
+    width: 200px;
+}

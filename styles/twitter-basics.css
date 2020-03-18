@@ -1,0 +1,71 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a.link {
+    color: #53c5ff;
+    font-size: 12px;
+}
+
+.profile-picture {
+    object-fit: cover;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.icon-hover:hover {
+    background-color: rgba(29, 161, 242, 0.1);
+    color: rgb(101, 119, 134);
+    border-radius: 50%;
+}
+
+.basic-input-wrapper {
+    padding: 15px 15px 15px 20px;
+    border-radius: 37px;
+    height: 20px;
+    max-width: 200px;
+    transition-property: background-color;
+    border-style: none;
+    background-color: rgb(230, 236, 240);
+    color: rgb(106, 129, 146);
+    letter-spacing: 2px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.basic-input-wrapper .search-icon {
+    content: url('../asserts/twitter/research.svg');
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.basic-input {
+    background-color: transparent;
+    border: none;
+}
+
+.basic-input:focus {
+    outline: none;
+}
+
+.basic-button {
+    margin-top: 10px;
+
+    border-radius: 27px;
+    height: 45px;
+    cursor: pointer;
+    transition-property: background-color;
+    border-style: none;
+
+    background-color: rgb(29, 161, 242);
+    border-color: rgb(29, 161, 242);
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+}

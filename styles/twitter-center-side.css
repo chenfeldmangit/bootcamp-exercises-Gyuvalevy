@@ -1,0 +1,129 @@
+.center-wrapper {
+    flex-grow: 3;
+    max-width: 60vw;
+}
+
+.center-wrapper > div {
+    border: 3px solid rgb(230, 236, 240);
+    border-top-width: 0;
+    overflow-y: scroll;
+    max-height: 90vh;
+}
+
+.center-wrapper .home-title {
+    overflow: hidden;
+    height: 30px;
+}
+
+.center-wrapper >:first-child {
+    border-top: 3px solid rgb(230, 236, 240);
+    font-weight: bold;
+}
+
+.feed-post {
+    display: flex;
+    flex-direction: row;
+    border-top: 3px solid rgb(230, 236, 240);
+}
+
+.feed-post:first-child {
+    border-top-width: 0;
+}
+
+.feed-post > div {
+    margin: 10px;
+}
+
+.feed-post .post {
+    flex-grow: 3;
+}
+
+.feed-post .post .post-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+
+.feed-post .post .post-actions i {
+    height: 20px;
+    width: 20px;
+    padding: 10px;
+}
+
+.feed-post .post .post-actions >:hover {
+    color: rgb(30, 162, 243);
+}
+
+.feed-post .post .action {
+    display: flex;
+    align-items: center;
+}
+.feed-post .post .speech-bubble {
+    content: url('../asserts/twitter/speech-bubble.svg');
+}
+.feed-post .post .retweet {
+    content: url('../asserts/twitter/retweet.svg');
+}
+.feed-post .post .heart {
+    content: url('../asserts/twitter/heart.svg');
+}
+.feed-post .post .upload {
+    content: url('../asserts/twitter/upload.svg');
+}
+
+.feed-post:hover {
+    flex-grow: 1;
+    background-color: rgb(245, 248, 250);
+}
+
+.feed-post .post-information {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+
+.feed-post .arrow-down {
+    content: url('../asserts/twitter/arrow-down.svg');
+    height: 20px;
+    width: 20px;
+    padding: 10px;
+}
+
+.feed-post .profile-information {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.feed-post .profile-information > div {
+    margin-right: 5px;
+}
+
+.feed-post .profile-information .profile-name {
+    font-weight: bold;
+}
+
+.feed-post .profile-information .profile-name a {
+    text-decoration: none;
+    color: black;
+}
+
+.feed-post .profile-information .approved {
+    content: url('../asserts/twitter/approved.svg');
+    height: 20px;
+    width: 20px;
+}
+
+.feed-post .profile-information .profile-mention,
+.feed-post .profile-information .post-tile {
+    color: rgb(101, 119, 134);
+}
+
+.feed-post .profile-information .profile-mention:after {
+    content: '·';
+    padding-left: 5px;
+}
