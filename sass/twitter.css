@@ -1,0 +1,11 @@
+.main-wrapper {
+  font-size: 20px;
+  width: 100%;
+  font-family: "Verdana", fantasy;
+  display: flex;
+}
+.main-wrapper > div {
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=twitter.css.map */

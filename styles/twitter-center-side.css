@@ -107,11 +107,6 @@
     font-weight: bold;
 }
 
-.feed-post .profile-information .profile-name a {
-    text-decoration: none;
-    color: black;
-}
-
 .feed-post .profile-information .approved {
     content: url('../asserts/twitter/approved.svg');
     height: 20px;

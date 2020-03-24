@@ -1,0 +1,31 @@
+@import "twitter-colors"
+
+.right-wrapper
+    flex-grow: 1
+    margin: 5px
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+
+    > div
+        margin-bottom: 10px
+
+    .right-box-wrapper
+        padding: 15px 15px 15px 20px
+        border-radius: 37px
+        transition-property: background-color
+        border-style: none
+        background-color: $input-back
+        color: $black
+        font-weight: bold
+        display: flex
+        justify-content: space-between
+
+        &.to-follow
+            display: flex
+            flex-direction: column
+
+            hr
+                width: 100%
+                border: 1px $input-back solid
+                color: white

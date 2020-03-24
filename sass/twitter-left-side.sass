@@ -1,0 +1,64 @@
+@import "twitter-colors"
+
+.left-wrapper
+    flex-grow: 1
+    margin-left: 20px
+    font-weight: bold
+    font-size: 25px
+    padding: 5px 0 5px 0
+
+    > div
+        padding: 15px
+        display: flex
+        align-items: center
+
+        &:hover
+            color: $button-color
+            background-color: $input-back
+            font-weight: bold
+            border-radius: 27px
+
+    div:first-child:hover
+        background-color: $white
+
+    i
+        height: 30px
+        width: 30px
+        display: inline-block
+
+    div span
+        padding-left: 20px
+
+    .left-menu-icon i
+        background-image: url('../asserts/twitter/twitter.svg')
+
+    .left-menu-home i
+        background-image: url('../asserts/twitter/home.svg')
+        fill: red
+
+    .left-menu-explore i
+        background-image: url('../asserts/twitter/research.svg')
+
+    .left-menu-notification i
+        background-image: url('../asserts/twitter/bell.svg')
+
+    .left-menu-messages i
+        background-image: url('../asserts/twitter/email.svg')
+
+    .left-menu-bookmarks i
+        background-image: url('../asserts/twitter/bookmark.svg')
+
+    .left-menu-lists i
+        background-image: url('../asserts/twitter/list.svg')
+
+    .profile-picture
+        object-fit: cover
+        height: 30px
+        width: 30px
+        border-radius: 50%
+
+    .left-menu-more i
+        background-image: url('../asserts/twitter/dots.svg')
+
+    .left-tweet-button
+        width: 200px

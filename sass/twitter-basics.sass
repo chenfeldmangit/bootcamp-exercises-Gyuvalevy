@@ -1,0 +1,61 @@
+@import "twitter-colors"
+
+a
+    text-decoration: none
+    color: $black
+
+    &.link
+        color: $link-color
+        font-size: 12px
+
+.profile-picture
+    object-fit: cover
+    height: 30px
+    width: 30px
+    border-radius: 50%
+
+.icon-hover:hover
+    background-color: $icon-hover-back
+    color: $icon-hover-color
+    border-radius: 50%
+
+.basic-input-wrapper
+    padding: 15px 15px 15px 20px
+    border-radius: 37px
+    height: 20px
+    max-width: 200px
+    transition-property: background-color
+    border-style: none
+    background-color: $input-back
+    color: $input-color
+    letter-spacing: 2px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+    .search-icon
+        content: url('../asserts/twitter/research.svg')
+        height: 30px
+        width: 30px
+        display: inline-block
+        margin-right: 10px
+
+.basic-input
+    background-color: transparent
+    border: none
+
+    &:focus
+        outline: none
+
+.basic-button
+    margin-top: 10px
+    border-radius: 27px
+    height: 45px
+    cursor: pointer
+    transition-property: background-color
+    border-style: none
+    background-color: $button-color
+    border-color: $button-color
+    color: $white
+    font-weight: bold
+    letter-spacing: 2px
