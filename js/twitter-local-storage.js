@@ -45,6 +45,10 @@ class TweeterLocalStorage {
         localStorage.setItem(KEY_TWEETS, JSON.stringify(tweets));
     };
 
+    static getTweetsLocalStorage = () => {
+        return JSON.parse(localStorage.getItem(KEY_TWEETS));
+    };
+
     static changeTweetLocalStorage = (tweet, index) => {
         let tweets = JSON.parse(localStorage.getItem(KEY_TWEETS));
         tweets[index] = tweet;

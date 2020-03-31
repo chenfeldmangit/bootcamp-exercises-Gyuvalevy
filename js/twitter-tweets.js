@@ -42,7 +42,10 @@ class Tweets {
 
     static renderTweets = () => {
         let tweets = JSON.parse(localStorage.getItem(TweeterLocalStorage.getKeyTweets()));
+        Tweets.renderThoseTweets(tweets);
+    };
 
+    static renderThoseTweets = (tweets) => {
         let feedPostsElement = document.getElementById('feed-posts');
         feedPostsElement.innerHTML = "";
 
@@ -95,4 +98,24 @@ class Tweets {
             }, 2000);
         }
     };
+
+    static searchTweets = (searchText) => {
+        let tweetsToRender = [];
+
+        const allTweets = TweeterLocalStorage.getTweetsLocalStorage();
+
+        if (!searchText) {
+            tweetsToRender = allTweets;
+        } else {
+            searchText = searchText.toLowerCase();
+
+            for (let i = 0; i < allTweets.length; i++) {
+                const tweet = allTweets[i].tweet.toLowerCase();
+                if (tweet.includes(searchText))
+                    tweetsToRender.push(allTweets[i]);
+            }
+        }
+
+        Tweets.renderThoseTweets(tweetsToRender);
+    }
 }

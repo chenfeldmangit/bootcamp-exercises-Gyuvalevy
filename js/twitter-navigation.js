@@ -63,15 +63,20 @@ async function loadTweets() {
     setLoading(false);
 }
 
+function setClicks() {
+    document.getElementById(homeLinkElementId).onclick = getSwitchCenterView(homePageElementId);
+    document.getElementById(profileLinkElementId).onclick = getSwitchCenterView(profilePageElementId);
+    document.getElementById('add-tweet-button').onclick = Tweets.addTweet(profileInfo);
+    document.getElementById('search-tweet').oninput =
+        (event) => Tweets.searchTweets(event.target.value);
+}
+
 window.onload = function (ev) {
 
     setLoading(true);
 
-    let homeCenterElement = document.getElementById(homePageElementId);
-    let profileCenterElement = document.getElementById(profilePageElementId);
-    document.getElementById(homeLinkElementId).onclick = getSwitchCenterView(homePageElementId);
-    document.getElementById(profileLinkElementId).onclick = getSwitchCenterView(profilePageElementId);
-    document.getElementById('add-tweet-button').onclick = Tweets.addTweet(profileInfo);
+    setClicks();
+
     populateProfile();
     getSwitchCenterView(homePageElementId)();
     // TweeterLocalStorage.populateLocalStorage();
