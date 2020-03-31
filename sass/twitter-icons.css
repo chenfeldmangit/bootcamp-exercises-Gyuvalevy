@@ -27,6 +27,10 @@
   content: url("../asserts/twitter/upload.svg");
 }
 
+.delete {
+  content: url("../asserts/twitter/delete.svg");
+}
+
 .arrow-down {
   content: url("../asserts/twitter/arrow-down.svg");
   height: 20px;

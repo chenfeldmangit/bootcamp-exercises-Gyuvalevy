@@ -51,6 +51,15 @@ class TweeterLocalStorage {
         localStorage.setItem(KEY_TWEETS, JSON.stringify(tweets));
     };
 
+    static removeTweetLocalStorage = (index) => {
+        let tweets = JSON.parse(localStorage.getItem(KEY_TWEETS));
+        tweets.splice(index, 1);
+
+        localStorage.setItem(KEY_TWEETS, JSON.stringify(tweets));
+    };
+
+
+
     static getKeyTweets = () => { return KEY_TWEETS };
 
 }

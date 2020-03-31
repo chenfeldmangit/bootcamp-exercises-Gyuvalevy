@@ -32,6 +32,11 @@ class Tweets {
             Tweets.renderTweets();
         };
 
+        root.querySelector(".post-actions .delete").onclick = () => {
+            TweeterLocalStorage.removeTweetLocalStorage(i);
+            Tweets.renderTweets();
+        };
+
         return root;
     };
 
@@ -65,6 +70,7 @@ class Tweets {
             textAreaElement.disabled = true;
             let content = textAreaElement.value;
 
+            let now = new Date();
             let newTweet = {
                 profileInfo: {
                     name: profile.name,
@@ -77,7 +83,7 @@ class Tweets {
                     retweets: 0,
                     likes: 0,
                 },
-                tweetTime: 'now',
+                tweetTime: (now).toDateString() + ', ' + now.toLocaleTimeString(),
                 tweet: content,
             };
 
