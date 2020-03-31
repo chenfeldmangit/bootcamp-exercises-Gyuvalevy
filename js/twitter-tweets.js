@@ -1,5 +1,5 @@
 class Tweets {
-    static populateTweet = (root, tweetElement) => {
+    static populateTweet = (root, tweetElement, i) => {
         const {profileInfo, actions, tweetTime, tweet} = tweetElement;
 
         root.querySelector(".profile-picture").setAttribute('src', profileInfo.imgSrc);
@@ -14,11 +14,29 @@ class Tweets {
         root.querySelector(".post-actions .retweets span").innerHTML = actions.retweets;
         root.querySelector(".post-actions .likes span").innerHTML = actions.likes;
 
+        root.querySelector(".post-actions .comments").onclick = () => {
+            tweetElement.actions.comments++;
+            TweeterLocalStorage.changeTweetLocalStorage(tweetElement, i);
+            Tweets.renderTweets();
+        };
+
+        root.querySelector(".post-actions .retweets").onclick = () => {
+            tweetElement.actions.retweets++;
+            TweeterLocalStorage.changeTweetLocalStorage(tweetElement, i);
+            Tweets.renderTweets();
+        };
+
+        root.querySelector(".post-actions .likes").onclick = () => {
+            tweetElement.actions.likes++;
+            TweeterLocalStorage.changeTweetLocalStorage(tweetElement, i);
+            Tweets.renderTweets();
+        };
+
         return root;
     };
 
     static renderTweets = () => {
-        let tweets = JSON.parse(localStorage.getItem('tweets'));
+        let tweets = JSON.parse(localStorage.getItem(TweeterLocalStorage.getKeyTweets()));
 
         let feedPostsElement = document.getElementById('feed-posts');
         feedPostsElement.innerHTML = "";
@@ -27,7 +45,7 @@ class Tweets {
 
         for (let i in tweets) {
             let clonedNode = feedPostTemplateElement.content.cloneNode(true);
-            let newTweet = Tweets.populateTweet(clonedNode, tweets[i]);
+            let newTweet = Tweets.populateTweet(clonedNode, tweets[i], i);
             feedPostsElement.appendChild(newTweet);
         }
     };
@@ -37,9 +55,9 @@ class Tweets {
             (resolve) => {
                 setTimeout(
                     () => {
-                               Tweets.renderTweets();
-                               resolve();
-                    }, 5000);
+                        Tweets.renderTweets();
+                        resolve();
+                    }, 2000);
             });
 
     static addTweet = (profile) => {

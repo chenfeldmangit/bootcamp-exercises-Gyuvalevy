@@ -1,3 +1,6 @@
+
+const KEY_TWEETS = 'tweets';
+
 class TweeterLocalStorage {
     static populateLocalStorage = () => {
         let initialTweets = [
@@ -33,12 +36,21 @@ class TweeterLocalStorage {
             },
         ];
 
-        localStorage.setItem('tweets', JSON.stringify(initialTweets))
+        localStorage.setItem(KEY_TWEETS, JSON.stringify(initialTweets))
     };
 
     static appendTweetLocalStorage = (newTweet) => {
-        let tweets = JSON.parse(localStorage.getItem('tweets'));
+        let tweets = JSON.parse(localStorage.getItem(KEY_TWEETS));
         tweets.splice(0, 0, newTweet);
-        localStorage.setItem('tweets', JSON.stringify(tweets));
+        localStorage.setItem(KEY_TWEETS, JSON.stringify(tweets));
     };
+
+    static changeTweetLocalStorage = (tweet, index) => {
+        let tweets = JSON.parse(localStorage.getItem(KEY_TWEETS));
+        tweets[index] = tweet;
+        localStorage.setItem(KEY_TWEETS, JSON.stringify(tweets));
+    };
+
+    static getKeyTweets = () => { return KEY_TWEETS };
+
 }
