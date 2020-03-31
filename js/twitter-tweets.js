@@ -51,8 +51,7 @@ class Tweets {
     };
 
     static renderTweetsOnLoad =
-        () => new Promise(
-            (resolve) => {
+        () => new Promise((resolve) => {
                 setTimeout(
                     () => {
                         Tweets.renderTweets();
@@ -82,10 +81,12 @@ class Tweets {
                 tweet: content,
             };
 
-            TweeterLocalStorage.appendTweetLocalStorage(newTweet);
-            textAreaElement.value = '';
-            textAreaElement.disabled = true;
-            Tweets.renderTweets();
+            setTimeout(() => {
+                TweeterLocalStorage.appendTweetLocalStorage(newTweet);
+                textAreaElement.value = '';
+                textAreaElement.disabled = false;
+                Tweets.renderTweets();
+            }, 2000);
         }
     };
 }
