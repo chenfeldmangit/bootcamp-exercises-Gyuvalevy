@@ -101,6 +101,13 @@
 #profile-center .profile-details {
   padding: 10px;
 }
+#profile-center .profile-details .profile-basic-info {
+  display: flex;
+  flex-direction: row;
+}
+#profile-center .profile-details .profile-basic-info > div {
+  margin-right: 10px;
+}
 #profile-center .profile-details > div {
   margin-bottom: 20px;
 }

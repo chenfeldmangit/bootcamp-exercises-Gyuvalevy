@@ -70,7 +70,9 @@ class Tweets {
     static addTweet = (profile) => {
         return (e) => {
             let textAreaElement = document.getElementById('add-tweet-text-area');
+            let buttonElement = document.getElementById('add-tweet-button');
             textAreaElement.disabled = true;
+            buttonElement.disabled = true;
             let content = textAreaElement.value;
 
             let now = new Date();
@@ -94,6 +96,7 @@ class Tweets {
                 TweeterLocalStorage.appendTweetLocalStorage(newTweet);
                 textAreaElement.value = '';
                 textAreaElement.disabled = false;
+                buttonElement.disabled = false ;
                 Tweets.renderTweets();
             }, 2000);
         }

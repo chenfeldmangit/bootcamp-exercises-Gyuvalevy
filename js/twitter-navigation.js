@@ -18,6 +18,19 @@ const profileInfo = {
     imgSrc: 'https://lh3.googleusercontent.com/-gJS19so4rY4/AAAAAAAAAAI/AAAAAAAAAAA/AKF05nB49lJKdInn1oTmsEQ5pA5HC8OlCw.CMID/s83-c/photo.jpg',
 };
 
+const profileInfo_Beni = {
+    name: "Benny Gantz",
+    approved: true,
+    mention: "gantzbe",
+    description: "נשוי לרויטל ואבא ל-4 ילדים. הרמטכ\"ל ה- 20 של צה\"ל \n" +
+        ". יו\"ר \"כחול לבן\" \n" ,
+    imgSrc: 'https://pbs.twimg.com/profile_images/1156850474110345216/FWeRQirQ_bigger.jpg',
+    address: "Tel Aviv",
+    homelink: "beni.com",
+    following: 23,
+    followers: 1000,
+};
+
 function getDisplay(displayOn, toDisplay) {
     return toDisplay ? displayOn : 'none';
 }
@@ -41,7 +54,7 @@ function getSwitchCenterView(pageElementId) {
 function populateProfile() {
 
     const root = document.getElementById(profilePageElementId);
-    const { name, mention, following, followers, address, description, homelink } = profileInfo;
+    const { name, mention, following, followers, address, description, homelink, imgSrc } = profileInfo;
 
     root.querySelector("#profile-name").innerHTML = name;
     root.querySelector("#profile-mention").innerHTML = "@" + mention;
@@ -50,6 +63,9 @@ function populateProfile() {
     root.querySelector("#profile-communication-hyperlink").innerHTML = homelink;
     root.querySelector("#profile-followers").innerHTML = following;
     root.querySelector("#profile-following").innerHTML = followers;
+
+    document.getElementById('profileImage').setAttribute('src', imgSrc);
+    document.getElementById('profileProfileImage').setAttribute('src', imgSrc);
 
 }
 

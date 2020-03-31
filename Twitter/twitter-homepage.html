@@ -59,9 +59,8 @@
 			<div class="left-menu-messages"><i></i><span>Messages</span></div>
 			<div class="left-menu-bookmarks"><i></i><span>Bookmarks</span></div>
 			<div class="left-menu-lists"><i></i><span>Lists</span></div>
-			<div id="left-menu-profile-link"><i><img class="profile-picture"
-					src="https://lh3.googleusercontent.com/-gJS19so4rY4/AAAAAAAAAAI/AAAAAAAAAAA/AKF05nB49lJKdInn1oTmsEQ5pA5HC8OlCw.CMID/s83-c/photo.jpg"
-					alt="profile"></i>
+			<div id="left-menu-profile-link">
+				<i><img class="profile-picture" id="profileImage" src=""  alt="profile"></i>
 				<span>Profile</span>
 			</div>
 			<div class="left-menu-more"><i></i><span>More</span></div>
@@ -92,63 +91,6 @@
 						</div-->
 				</div>
 				<div id="feed-posts" class="feed-posts scroll">
-					<!--
-						<div class="feed-post">
-							<div>
-								<img class="profile-picture" src="https://lh3.googleusercontent.com/-gJS19so4rY4/AAAAAAAAAAI/AAAAAAAAAAA/AKF05nB49lJKdInn1oTmsEQ5pA5HC8OlCw.CMID/s83-c/photo.jpg" alt="profile">
-							</div>
-							<div class="post">
-								<div class="post-information">
-									<div class="profile-information">
-										<div class="profile-name"><a href="">Yuval Levy</a></div>
-										<div class="approved"></div>
-										<div class="profile-mention">@yuvalevy</div>
-										<div class="post-tile">1h</div>
-									</div>
-									<div class="arrow-down icon-hover"></div>
-								</div>
-								<div>
-									<span>
-										HALAS Corona!<br />
-										מה יהיה!?!
-									</span>
-								</div>
-								<div class="post-actions">
-									<div class="action"><i class="small-icon icon-space-pad speech-bubble icon-hover"></i><span>117</span></div>
-									<div class="action"><i class="small-icon icon-space-pad retweet icon-hover"></i><span>31</span></div>
-									<div class="action"><i class="small-icon icon-space-pad heart icon-hover"></i><span>300</span></div>
-									<div class="action"><i class="small-icon icon-space-pad upload icon-hover"></i></div>
-								</div>
-							</div>
-						</div>
-						<div class="feed-post">
-							<div>
-								<img class="profile-picture" src="https://pbs.twimg.com/profile_images/1156850474110345216/FWeRQirQ_bigger.jpg" alt="profile">
-							</div>
-							<div class="post">
-								<div class="post-information">
-									<div class="profile-information">
-										<div class="profile-name"><a href="">Benny Gantz</a></div>
-										<div class="approved"></div>
-										<div class="profile-mention">@gantzbe</div>
-										<div class="post-tile">2h</div>
-									</div>
-									<div class="arrow-down icon-hover"></div>
-								</div>
-								<div>
-									<span>
-										הדגשתי שראוי לחברי הכנסת לשמש דוגמה לציבור בישראל ולהוכיח כי ניתן לתפקד גם בעת משבר, תוך הפגנת אחריות והקפדה על הוראות משרד הבריאות, בין אם בקיום ישיבות בשיחות וידאו או בפתרונות יצירתיים אחרים.
-									</span>
-								</div>
-								<div class="post-actions">
-									<div class="action"><i class="speech-bubble icon-hover"></i><span>117</span></div>
-									<div class="action"><i class="retweet icon-hover"></i><span>31</span></div>
-									<div class="action"><i class="heart icon-hover"></i><span>300</span></div>
-									<div class="action"><i class="upload icon-hover"></i></div>
-								</div>
-							</div>
-						</div>
-					-->
 				</div>
 			</div>
 			<div id="profile-center" class="center-container">
@@ -157,9 +99,14 @@
 					<button class="basic-button edit-profile-button">Edit Profile</button>
 				</div>
 				<div class="profile-details">
-					<div>
-						<div id="profile-name"></div>
-						<div id="profile-mention" class="profile-mention"></div>
+					<div class="profile-basic-info">
+						<div>
+							<i><img class="profile-picture" id="profileProfileImage" src="" alt="profile"></i>
+						</div>
+						<div>
+							<div id="profile-name"></div>
+							<div id="profile-mention" class="profile-mention"></div>
+						</div>
 					</div>
 					<div id="profile-description"></div>
 					<div class="profile-section profile-description">

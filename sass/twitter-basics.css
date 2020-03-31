@@ -64,4 +64,8 @@ a.link {
   letter-spacing: 2px;
 }
 
+.basic-button:disabled {
+  background-color: black;
+}
+
 /*# sourceMappingURL=twitter-basics.css.map */
