@@ -1,102 +1,114 @@
 .center-wrapper
     flex-grow: 3
     max-width: 60vw
+    width: 60vw
 
-    > div
-        border: 3px solid rgb(230, 236, 240)
-        border-top-width: 0
-        overflow-y: scroll
-        max-height: 90vh
-
-    .home-title
+    .title
         overflow: hidden
         height: 30px
 
-    > :first-child
+    .center-container
+        > div
+            border: 3px solid rgb(230, 236, 240)
+            border-top-width: 0
+            max-height: 90vh
+
+        > :first-child
+            border-top: 3px solid rgb(230, 236, 240)
+            font-weight: bold
+
+        > .scroll
+            overflow-y: scroll
+
+.profile-mention, .post-tile, .profile-description
+    color: rgb(101, 119, 134)
+
+#homepage-center
+    .feed-post
+        display: flex
+        flex-direction: row
         border-top: 3px solid rgb(230, 236, 240)
-        font-weight: bold
 
-.feed-post
-    display: flex
-    flex-direction: row
-    border-top: 3px solid rgb(230, 236, 240)
+        &:first-child
+            border-top-width: 0
 
-    &:first-child
-        border-top-width: 0
+        > div
+            margin: 10px
 
-    > div
-        margin: 10px
+        .post
+            flex-grow: 3
 
-    .post
-        flex-grow: 3
+            .post-actions
+                display: flex
+                flex-direction: row
+                justify-content: space-between
+                padding-right: 50px
 
-        .post-actions
+                i
+                    height: 20px
+                    width: 20px
+                    padding: 10px
+
+                > :hover
+                    color: rgb(30, 162, 243)
+
+            .action
+                display: flex
+                align-items: center
+
+        &:hover
+            flex-grow: 1
+            background-color: rgb(245, 248, 250)
+
+        .post-information
             display: flex
             flex-direction: row
             justify-content: space-between
-            padding-right: 50px
+            padding-right: 5px
+            padding-top: 5px
 
-            i
-                height: 20px
-                width: 20px
-                padding: 10px
-
-            > :hover
-                color: rgb(30, 162, 243)
-
-        .action
+        .profile-information
             display: flex
+            flex-direction: row
             align-items: center
+            margin-bottom: 5px
 
-        .speech-bubble
-            content: url('../asserts/twitter/speech-bubble.svg')
+            > div
+                margin-right: 5px
 
-        .retweet
-            content: url('../asserts/twitter/retweet.svg')
+            .profile-name
+                font-weight: bold
 
-        .heart
-            content: url('../asserts/twitter/heart.svg')
+            .profile-mention:after
+                content: '·'
+                padding-left: 5px
 
-        .upload
-            content: url('../asserts/twitter/upload.svg')
 
-    &:hover
-        flex-grow: 1
-        background-color: rgb(245, 248, 250)
-
-    .post-information
+#profile-center
+    .profile-title
         display: flex
         flex-direction: row
         justify-content: space-between
-        padding-right: 5px
-        padding-top: 5px
+        align-items: center
 
-    .arrow-down
-        content: url('../asserts/twitter/arrow-down.svg')
-        height: 20px
-        width: 20px
+    #profile-name
+        font-weight: bold
+
+    .profile-details
         padding: 10px
 
-    .profile-information
-        display: flex
-        flex-direction: row
-        align-items: center
-        margin-bottom: 5px
-
         > div
-            margin-right: 5px
+            margin-bottom: 20px
 
-        .profile-name
-            font-weight: bold
+        .profile-section
+            display: flex
+            flex-direction: row
 
-        .approved
-            content: url('../asserts/twitter/approved.svg')
-            height: 20px
-            width: 20px
+            > div
+                margin-right: 10px
 
-        .profile-mention, .post-tile
-            color: rgb(101, 119, 134)
+    #profile-following, #profile-followers
+        font-weight: bold
 
-        .profile-mention:after
-            content: '·'
-            padding-left: 5px
+    .edit-profile-button
+        width: 150px

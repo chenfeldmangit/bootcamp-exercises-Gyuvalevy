@@ -2,106 +2,116 @@
 .center-wrapper {
   flex-grow: 3;
   max-width: 60vw;
+  width: 60vw;
 }
-.center-wrapper > div {
-  border: 3px solid #e6ecf0;
-  border-top-width: 0;
-  overflow-y: scroll;
-  max-height: 90vh;
-}
-.center-wrapper .home-title {
+.center-wrapper .title {
   overflow: hidden;
   height: 30px;
 }
-.center-wrapper > :first-child {
+.center-wrapper .center-container > div {
+  border: 3px solid #e6ecf0;
+  border-top-width: 0;
+  max-height: 90vh;
+}
+.center-wrapper .center-container > :first-child {
   border-top: 3px solid #e6ecf0;
   font-weight: bold;
 }
+.center-wrapper .center-container > .scroll {
+  overflow-y: scroll;
+}
 
-.feed-post {
+.profile-mention, .post-tile, .profile-description {
+  color: #657786;
+}
+
+#homepage-center .feed-post {
   display: flex;
   flex-direction: row;
   border-top: 3px solid #e6ecf0;
 }
-.feed-post:first-child {
+#homepage-center .feed-post:first-child {
   border-top-width: 0;
 }
-.feed-post > div {
+#homepage-center .feed-post > div {
   margin: 10px;
 }
-.feed-post .post {
+#homepage-center .feed-post .post {
   flex-grow: 3;
 }
-.feed-post .post .post-actions {
+#homepage-center .feed-post .post .post-actions {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-right: 50px;
 }
-.feed-post .post .post-actions i {
+#homepage-center .feed-post .post .post-actions i {
   height: 20px;
   width: 20px;
   padding: 10px;
 }
-.feed-post .post .post-actions > :hover {
+#homepage-center .feed-post .post .post-actions > :hover {
   color: #1ea2f3;
 }
-.feed-post .post .action {
+#homepage-center .feed-post .post .action {
   display: flex;
   align-items: center;
 }
-.feed-post .post .speech-bubble {
-  content: url("../asserts/twitter/speech-bubble.svg");
-}
-.feed-post .post .retweet {
-  content: url("../asserts/twitter/retweet.svg");
-}
-.feed-post .post .heart {
-  content: url("../asserts/twitter/heart.svg");
-}
-.feed-post .post .upload {
-  content: url("../asserts/twitter/upload.svg");
-}
-.feed-post:hover {
+#homepage-center .feed-post:hover {
   flex-grow: 1;
   background-color: #f5f8fa;
 }
-.feed-post .post-information {
+#homepage-center .feed-post .post-information {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-right: 5px;
   padding-top: 5px;
 }
-.feed-post .arrow-down {
-  content: url("../asserts/twitter/arrow-down.svg");
-  height: 20px;
-  width: 20px;
-  padding: 10px;
-}
-.feed-post .profile-information {
+#homepage-center .feed-post .profile-information {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-bottom: 5px;
 }
-.feed-post .profile-information > div {
+#homepage-center .feed-post .profile-information > div {
   margin-right: 5px;
 }
-.feed-post .profile-information .profile-name {
+#homepage-center .feed-post .profile-information .profile-name {
   font-weight: bold;
 }
-.feed-post .profile-information .approved {
-  content: url("../asserts/twitter/approved.svg");
-  height: 20px;
-  width: 20px;
-}
-.feed-post .profile-information .profile-mention, .feed-post .profile-information .post-tile {
-  color: #657786;
-}
-.feed-post .profile-information .profile-mention:after {
+#homepage-center .feed-post .profile-information .profile-mention:after {
   content: "·";
   padding-left: 5px;
+}
+
+#profile-center .profile-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#profile-center #profile-name {
+  font-weight: bold;
+}
+#profile-center .profile-details {
+  padding: 10px;
+}
+#profile-center .profile-details > div {
+  margin-bottom: 20px;
+}
+#profile-center .profile-details .profile-section {
+  display: flex;
+  flex-direction: row;
+}
+#profile-center .profile-details .profile-section > div {
+  margin-right: 10px;
+}
+#profile-center #profile-following, #profile-center #profile-followers {
+  font-weight: bold;
+}
+#profile-center .edit-profile-button {
+  width: 150px;
 }
 
 /*# sourceMappingURL=twitter-center-side.css.map */

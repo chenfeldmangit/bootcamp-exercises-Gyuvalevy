@@ -1,0 +1,51 @@
+.small-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.icon-space-pad {
+  padding: 10px;
+}
+
+.icon-right-pad {
+  padding-right: 10px;
+}
+
+.speech-bubble {
+  content: url("../asserts/twitter/speech-bubble.svg");
+}
+
+.retweet {
+  content: url("../asserts/twitter/retweet.svg");
+}
+
+.heart {
+  content: url("../asserts/twitter/heart.svg");
+}
+
+.upload {
+  content: url("../asserts/twitter/upload.svg");
+}
+
+.arrow-down {
+  content: url("../asserts/twitter/arrow-down.svg");
+  height: 20px;
+  width: 20px;
+  padding: 10px;
+}
+
+.approved {
+  content: url("../asserts/twitter/approved.svg");
+  height: 20px;
+  width: 20px;
+}
+
+.location {
+  content: url("../asserts/twitter/place.svg");
+}
+
+.hyperlink {
+  content: url("../asserts/twitter/link.svg");
+}
+
+/*# sourceMappingURL=twitter-icons.css.map */

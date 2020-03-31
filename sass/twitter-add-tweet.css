@@ -1,0 +1,28 @@
+#add-tweet {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 3px solid #e6ecf0;
+}
+#add-tweet:first-child {
+  border-top-width: 0;
+}
+#add-tweet > div {
+  margin: 10px;
+}
+#add-tweet .text-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 5px;
+  padding-top: 5px;
+}
+#add-tweet .add-area {
+  flex-grow: 1;
+}
+#add-tweet .add-area #add-tweet-text-area {
+  border: none;
+  width: 100%;
+}
+
+/*# sourceMappingURL=twitter-add-tweet.css.map */
