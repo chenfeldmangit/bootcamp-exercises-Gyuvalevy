@@ -1,5 +1,5 @@
 @charset "UTF-8";
-#loading-center.center-wrapper {
+#loadingCenter.center-wrapper {
   text-align: center;
 }
 
@@ -29,99 +29,99 @@
   color: #657786;
 }
 
-#homepage-center .feed-post {
+#homepageCenter .feed-post {
   display: flex;
   flex-direction: row;
   border-top: 3px solid #e6ecf0;
 }
-#homepage-center .feed-post:first-child {
+#homepageCenter .feed-post:first-child {
   border-top-width: 0;
 }
-#homepage-center .feed-post > div {
+#homepageCenter .feed-post > div {
   margin: 10px;
 }
-#homepage-center .feed-post .post {
+#homepageCenter .feed-post .post {
   flex-grow: 3;
 }
-#homepage-center .feed-post .post .post-actions {
+#homepageCenter .feed-post .post .post-actions {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-right: 50px;
 }
-#homepage-center .feed-post .post .post-actions i {
+#homepageCenter .feed-post .post .post-actions i {
   height: 20px;
   width: 20px;
   padding: 10px;
 }
-#homepage-center .feed-post .post .post-actions > :hover {
+#homepageCenter .feed-post .post .post-actions > :hover {
   color: #1ea2f3;
 }
-#homepage-center .feed-post .post .action {
+#homepageCenter .feed-post .post .action {
   display: flex;
   align-items: center;
 }
-#homepage-center .feed-post:hover {
+#homepageCenter .feed-post:hover {
   flex-grow: 1;
   background-color: #f5f8fa;
 }
-#homepage-center .feed-post .post-information {
+#homepageCenter .feed-post .post-information {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-right: 5px;
   padding-top: 5px;
 }
-#homepage-center .feed-post .profile-information {
+#homepageCenter .feed-post .profile-information {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-bottom: 5px;
 }
-#homepage-center .feed-post .profile-information > div {
+#homepageCenter .feed-post .profile-information > div {
   margin-right: 5px;
 }
-#homepage-center .feed-post .profile-information .profile-name {
+#homepageCenter .feed-post .profile-information .profile-name {
   font-weight: bold;
 }
-#homepage-center .feed-post .profile-information .profile-mention:after {
+#homepageCenter .feed-post .profile-information .profile-mention:after {
   content: "·";
   padding-left: 5px;
 }
 
-#profile-center .profile-title {
+#profileCenter .profile-title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-#profile-center #profile-name {
+#profileCenter #profileName {
   font-weight: bold;
 }
-#profile-center .profile-details {
+#profileCenter .profile-details {
   padding: 10px;
 }
-#profile-center .profile-details .profile-basic-info {
+#profileCenter .profile-details .profile-basic-info {
   display: flex;
   flex-direction: row;
 }
-#profile-center .profile-details .profile-basic-info > div {
+#profileCenter .profile-details .profile-basic-info > div {
   margin-right: 10px;
 }
-#profile-center .profile-details > div {
+#profileCenter .profile-details > div {
   margin-bottom: 20px;
 }
-#profile-center .profile-details .profile-section {
+#profileCenter .profile-details .profile-section {
   display: flex;
   flex-direction: row;
 }
-#profile-center .profile-details .profile-section > div {
+#profileCenter .profile-details .profile-section > div {
   margin-right: 10px;
 }
-#profile-center #profile-following, #profile-center #profile-followers {
+#profileCenter #profileFollowing, #profileCenter #profileFollowers {
   font-weight: bold;
 }
-#profile-center .edit-profile-button {
+#profileCenter .edit-profile-button {
   width: 150px;
 }
 

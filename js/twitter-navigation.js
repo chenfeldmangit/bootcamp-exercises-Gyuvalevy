@@ -1,10 +1,10 @@
-const centerPageElementId = "center-page";
-const homePageElementId = "homepage-center";
-const loadingCenterElementId = "loading-center";
-const profilePageElementId = "profile-center";
+const centerPageElementId = "centerPage";
+const homePageElementId = "homepageCenter";
+const loadingCenterElementId = "loadingCenter";
+const profilePageElementId = "profileCenter";
 
-const homeLinkElementId = "left-menu-home-link";
-const profileLinkElementId = "left-menu-profile-link";
+const homeLinkElementId = "leftMenuHomeLink";
+const profileLinkElementId = "leftMenuProfileLink";
 
 const profileInfo = {
     name: "Yuval Levy",
@@ -56,13 +56,13 @@ function populateProfile() {
     const root = document.getElementById(profilePageElementId);
     const { name, mention, following, followers, address, description, homelink, imgSrc } = profileInfo;
 
-    root.querySelector("#profile-name").innerHTML = name;
-    root.querySelector("#profile-mention").innerHTML = "@" + mention;
-    root.querySelector("#profile-description").innerHTML = description;
-    root.querySelector("#profile-communication-address").innerHTML = address;
-    root.querySelector("#profile-communication-hyperlink").innerHTML = homelink;
-    root.querySelector("#profile-followers").innerHTML = following;
-    root.querySelector("#profile-following").innerHTML = followers;
+    root.querySelector("#profileName").innerHTML = name;
+    root.querySelector("#profileMention").innerHTML = "@" + mention;
+    root.querySelector("#profileDescription").innerHTML = description;
+    root.querySelector("#profileCommunicationAddress").innerHTML = address;
+    root.querySelector("#profileCommunicationHyperlink").innerHTML = homelink;
+    root.querySelector("#profileFollowers").innerHTML = following;
+    root.querySelector("#profileFollowing").innerHTML = followers;
 
     document.getElementById('profileImage').setAttribute('src', imgSrc);
     document.getElementById('profileProfileImage').setAttribute('src', imgSrc);
@@ -82,8 +82,8 @@ async function loadTweets() {
 function setClicks() {
     document.getElementById(homeLinkElementId).onclick = getSwitchCenterView(homePageElementId);
     document.getElementById(profileLinkElementId).onclick = getSwitchCenterView(profilePageElementId);
-    document.getElementById('add-tweet-button').onclick = Tweets.addTweet(profileInfo);
-    document.getElementById('search-tweet').oninput =
+    document.getElementById('addTweetButton').onclick = Tweets.addTweet(profileInfo);
+    document.getElementById('searchTweet').oninput =
         (event) => Tweets.searchTweets(event.target.value);
 }
 

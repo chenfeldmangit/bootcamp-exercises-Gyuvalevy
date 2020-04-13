@@ -18,7 +18,7 @@
 </head>
 <body>
 
-	<template id="template-feed-post">
+	<template id="templateFeedPost">
 		<div class="feed-post">
 			<div>
 				<img class="profile-picture" src="" alt="profile">
@@ -53,13 +53,13 @@
 	<div class="main-wrapper">
 		<div class="left-wrapper">
 			<div class="left-menu-icon"><i></i></div>
-			<div id="left-menu-home-link" class="left-menu-home"><i></i><span>Home</span></div>
+			<div id="leftMenuHomeLink" class="left-menu-home"><i></i><span>Home</span></div>
 			<div class="left-menu-explore"><i></i><span>Explore</span></div>
 			<div class="left-menu-notification"><i></i><span>Notification</span></div>
 			<div class="left-menu-messages"><i></i><span>Messages</span></div>
 			<div class="left-menu-bookmarks"><i></i><span>Bookmarks</span></div>
 			<div class="left-menu-lists"><i></i><span>Lists</span></div>
-			<div id="left-menu-profile-link">
+			<div id="leftMenuProfileLink">
 				<i><img class="profile-picture" id="profileImage" src=""  alt="profile"></i>
 				<span>Profile</span>
 			</div>
@@ -68,20 +68,20 @@
 			<button class="basic-button left-tweet-button">Tweet</button>
 
 		</div>
-		<div id="loading-center" class="center-wrapper">
+		<div id="loadingCenter" class="center-wrapper">
 			<img src="https://i.gifer.com/4V0b.gif" alt="loading...">
 		</div>
-		<div id="center-page" class="center-wrapper">
-			<div id="homepage-center" class="center-container">
+		<div id="centerPage" class="center-wrapper">
+			<div id="homepageCenter" class="center-container">
 				<div class="title">Home</div>
-				<div id="add-tweet" class="text-area">
+				<div id="addTweet" class="text-area">
 					<div class="add-area">
-						<label for="add-tweet-text-area">
-							<textarea id="add-tweet-text-area" placeholder="What&apos;s happening" rows="5"></textarea>
+						<label for="addTweetTextArea">
+							<textarea id="addTweetTextArea" placeholder="What&apos;s happening" rows="5"></textarea>
 						</label>
 					</div>
 					<div>
-						<button class="basic-button edit-profile-button" id="add-tweet-button">Tweet</button>
+						<button class="basic-button edit-profile-button" id="addTweetButton">Tweet</button>
 					</div>
 					<!--div class="post-actions">
 							<div class="action"><i class="small-icon icon-space-pad speech-bubble icon-hover"></i><span>117</span></div>
@@ -90,10 +90,10 @@
 							<div class="action"><i class="small-icon icon-space-pad upload icon-hover"></i></div>
 						</div-->
 				</div>
-				<div id="feed-posts" class="feed-posts scroll">
+				<div id="feedPosts" class="feed-posts scroll">
 				</div>
 			</div>
-			<div id="profile-center" class="center-container">
+			<div id="profileCenter" class="center-container">
 				<div class="profile-title">
 					<div class="title">Profile</div>
 					<button class="basic-button edit-profile-button">Edit Profile</button>
@@ -104,18 +104,18 @@
 							<i><img class="profile-picture" id="profileProfileImage" src="" alt="profile"></i>
 						</div>
 						<div>
-							<div id="profile-name"></div>
-							<div id="profile-mention" class="profile-mention"></div>
+							<div id="profileName"></div>
+							<div id="profileMention" class="profile-mention"></div>
 						</div>
 					</div>
-					<div id="profile-description"></div>
+					<div id="profileDescription"></div>
 					<div class="profile-section profile-description">
-						<div><i class="small-icon icon-right-pad location"></i><span id="profile-communication-address"></span></div>
-						<div><i class="small-icon icon-right-pad hyperlink"></i><span id="profile-communication-hyperlink"></span></div>
+						<div><i class="small-icon icon-right-pad location"></i><span id="profileCommunicationAddress"></span></div>
+						<div><i class="small-icon icon-right-pad hyperlink"></i><span id="profileCommunicationHyperlink"></span></div>
 					</div>
 					<div class="profile-section">
-						<div><span id="profile-following"></span><span> Following</span></div>
-						<div><span id="profile-followers"></span><span> Followers</span></div>
+						<div><span id="profileFollowing"></span><span> Following</span></div>
+						<div><span id="profileFollowers"></span><span> Followers</span></div>
 					</div>
 				</div>
 			</div>
@@ -124,7 +124,7 @@
 			<div class="basic-input-wrapper">
 				<i class="search-icon"></i>
 				<label>
-					<input id="search-tweet" placeholder="Search Twitter" class="basic-input">
+					<input id="searchTweet" placeholder="Search Twitter" class="basic-input">
 				</label>
 			</div>
 			<div class="right-box-wrapper">

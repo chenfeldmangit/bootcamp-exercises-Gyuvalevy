@@ -46,10 +46,10 @@ class Tweets {
     };
 
     static renderThoseTweets = (tweets) => {
-        let feedPostsElement = document.getElementById('feed-posts');
+        let feedPostsElement = document.getElementById('feedPosts');
         feedPostsElement.innerHTML = "";
 
-        let feedPostTemplateElement = document.getElementById('template-feed-post');
+        let feedPostTemplateElement = document.getElementById('templateFeedPost');
 
         for (let i in tweets) {
             let clonedNode = feedPostTemplateElement.content.cloneNode(true);
@@ -69,8 +69,8 @@ class Tweets {
 
     static addTweet = (profile) => {
         return (e) => {
-            let textAreaElement = document.getElementById('add-tweet-text-area');
-            let buttonElement = document.getElementById('add-tweet-button');
+            let textAreaElement = document.getElementById('addTweetTextArea');
+            let buttonElement = document.getElementById('addTweetButton');
             textAreaElement.disabled = true;
             buttonElement.disabled = true;
             let content = textAreaElement.value;

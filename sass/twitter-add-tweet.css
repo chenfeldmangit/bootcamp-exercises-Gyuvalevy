@@ -1,26 +1,26 @@
-#add-tweet {
+#addTweet {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-top: 3px solid #e6ecf0;
 }
-#add-tweet:first-child {
+#addTweet:first-child {
   border-top-width: 0;
 }
-#add-tweet > div {
+#addTweet > div {
   margin: 10px;
 }
-#add-tweet .text-area {
+#addTweet .text-area {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-right: 5px;
   padding-top: 5px;
 }
-#add-tweet .add-area {
+#addTweet .add-area {
   flex-grow: 1;
 }
-#add-tweet .add-area #add-tweet-text-area {
+#addTweet .add-area #addTweetTextArea {
   border: none;
   max-width: 1040px;
   width: 100%;
